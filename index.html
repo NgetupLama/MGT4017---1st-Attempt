@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StudyLoom — Peer-to-peer study guild</title>
+<meta name="description" content="Teach the subject you're strongest in, earn credits, and spend them learning from someone a year ahead. No cash, no gatekeeping.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path d='M2 2h28L2 24z' fill='%23d46be8'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;800&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="logo" href="#top">
+      <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M1 1h22L1 14z" fill="#d46be8"/><path d="M23 1v22H9z" fill="#f0a6f5" opacity=".8"/></svg>
+      StudyLoom
+    </a>
+    <nav class="links" aria-label="Main">
+      <a href="#exchange">The exchange</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#credits">Credits</a>
+    </nav>
+    <div class="actions">
+      <a class="mono muted" href="#">My guild</a>
+      <a class="mono" href="#">Sign in</a>
+      <a class="btn btn-dark" href="#join">Join the guild</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero wrap">
+    <div class="hero-copy">
+      <p class="mono eyebrow">Peer-to-peer study guild · Est. 2026</p>
+      <h1>Master a subject. Trade your <span class="blue">mastery.</span></h1>
+      <p class="lede">School and college students teach the subject they are strongest in and earn credits. Spend those credits learning English, maths, science, coding, music or art from someone a year ahead — no cash, no gatekeeping.</p>
+      <div class="cta">
+        <a class="btn btn-blue" href="#join">Join the guild <span aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="#exchange">See the exchange</a>
+      </div>
+      <dl class="stats">
+        <div><dt class="num">48</dt><dd class="mono">Skills on the exchange</dd></div>
+        <div><dt class="num">12,480</dt><dd class="mono">Credits traded</dd></div>
+        <div><dt class="num">210</dt><dd class="mono">Guild members</dd></div>
+      </dl>
+    </div>
+
+    <aside class="ledger" aria-label="Live exchange ledger">
+      <div class="ledger-top mono"><span>Fig. 01 — The exchange ledger</span><span class="live">Live</span></div>
+      <div class="orb" aria-hidden="true">
+        <i></i><i></i>
+        <div class="core"><b id="credit-count">40</b><span class="mono">Credits</span></div>
+      </div>
+      <ul class="ledger-rows mono">
+        <li><span>Teach one session</span><span class="plus">+40 cr</span></li>
+        <li><span>Learn one session</span><span>−40 cr</span></li>
+      </ul>
+    </aside>
+  </section>
+
+  <section id="exchange" class="section wrap">
+    <h2>How the exchange works</h2>
+    <div class="grid3">
+      <article><h3>Teach what you know</h3><p>List a subject you're strong in. Run a 45-minute session with someone a year or two behind you and earn 40 credits.</p></article>
+      <article><h3>Spend what you earn</h3><p>Use credits to book a session in any subject, from a student who's already been through it. One session costs 40 credits.</p></article>
+      <article><h3>Keep the guild honest</h3><p>Both sides rate each session. Teachers with strong ratings appear first, and credits never convert to cash.</p></article>
+    </div>
+  </section>
+
+  <section id="gallery" class="section wrap">
+    <h2>Skills on the exchange</h2>
+    <ul class="chips">
+      <li>English</li><li>Maths</li><li>Biology</li><li>Chemistry</li><li>Physics</li><li>Python</li><li>Web design</li><li>Piano</li><li>Guitar</li><li>Drawing</li><li>Spanish</li><li>Essay writing</li>
+    </ul>
+  </section>
+
+  <section id="reviews" class="section wrap">
+    <h2>What members say</h2>
+    <div class="grid3">
+      <blockquote><p>I taught GCSE maths on Tuesday and used the credits for Python on Thursday. It felt fair.</p><cite>Aisha, Year 12</cite></blockquote>
+      <blockquote><p>My tutor was only a year ahead, so she remembered exactly where I'd get stuck.</p><cite>Tom, Year 10</cite></blockquote>
+      <blockquote><p>Teaching chemistry made me realise how much I actually knew.</p><cite>Priya, first-year uni</cite></blockquote>
+    </div>
+  </section>
+
+  <section id="credits" class="section wrap">
+    <h2>Credits</h2>
+    <p class="lede narrow">1 session = 40 credits, earned or spent. New members start with 40 credits, enough for their first lesson.</p>
+  </section>
+
+  <section id="join" class="section wrap join">
+    <h2>Join the guild</h2>
+    <form id="join-form" class="join-form">
+      <label for="email">Email address</label>
+      <div class="row">
+        <input id="email" type="email" required placeholder="you@school.org">
+        <button class="btn btn-blue" type="submit">Get early access</button>
+      </div>
+      <p id="join-msg" class="mono" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="wrap foot mono">© 2026 StudyLoom</footer>
+<script src="script.js"></script>
+</body>
+</html>
